@@ -23,7 +23,50 @@
     </div>
 
     <div class="page">
+        <div class="top">
+            <p>
+                This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
 
+        <div class="form">
+            <form id="signup" action="https://google.com" method="post">
+                <h1>Let's do this!</h1>
+                <div class="inputs">
+                    <div class="first input">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" required>
+                    </div>
+                    <div class="last input">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" required>
+                    </div>
+                    <div class="email input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="phone input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="password input">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" required>
+                    </div>
+                    <div class="password input">
+                        <label for="confirmpass">Confirm Password</label>
+                        <input type="password" id="confirmpass" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="bottom">
+            <button id="create" type="submit" form="signup">Create Account</button>
+            <p>Already have an account? <a href="https://google.com" id="login">Log in</a> </p>
+        </div>
     </div>
 </body>
 </html>

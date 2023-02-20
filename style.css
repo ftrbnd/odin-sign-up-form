@@ -1,3 +1,9 @@
+:root {
+    --login-color: #596D48;
+    --input-border: #E5E7EB;
+    --error-color: red;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -48,4 +54,73 @@ div.credit {
 
 a {
     color: inherit;
+}
+
+div.page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Walkway Bold";
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+div.top, div.bottom {
+    background-color: rgb(242, 242, 242);
+    padding: 48px;
+}
+
+div.form {
+    padding: 0 48px;
+}
+
+button#create {
+    background-color: var(--login-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+a#login {
+    color: var(--login-color);
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input {
+    width: 192px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus {
+    box-shadow: 2px 2px 5px black;
+    outline: 1px solid blue;
+}
+
+input#pass:invalid:focus, input#confirmpass:invalid:focus {
+    outline: 1px solid red;
+}
+
+div.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 168px;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
 }
