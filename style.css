@@ -9,13 +9,18 @@ html, body {
     padding: 0;
     display: flex;
     height: 100%;
-    font-family: Walkway, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
 div.sidebar {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+h1.header {
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 img#sidebar-photo {
@@ -61,7 +66,6 @@ div.page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: "Walkway Bold";
     font-size: 1.25rem;
     margin: 0;
 }
@@ -69,6 +73,7 @@ div.page {
 div.top, div.bottom {
     background-color: rgb(242, 242, 242);
     padding: 48px;
+    padding-right: 288px;
 }
 
 div.form {
