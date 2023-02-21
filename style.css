@@ -115,7 +115,7 @@ input:focus {
     outline: 1px solid blue;
 }
 
-input#pass:invalid:focus, input#confirmpass:invalid:focus {
+input#pass:invalid, input#confirmpass:invalid {
     outline: 1px solid red;
 }
 
